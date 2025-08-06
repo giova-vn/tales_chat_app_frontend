@@ -3,12 +3,20 @@ body {
     max-width: 1900px;
     background-color: #FEF9F2;
     margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
+}
+
+body, button, textarea {
+    font-family: "Fira Sans", Arial, Helvetica, sans-serif;
 }
 
 .row {
     display: flex;
     flex-wrap: wrap;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
 }
 
 nav {
@@ -29,8 +37,10 @@ img {
 
 h1 {
     margin: 0;
-    font-size: 1.3em;
     height: 50px;
+    font-family: "Fjalla One", Arial, Helvetica, sans-serif;
+    font-size: 1.5em;
+    letter-spacing: .8px;
 
     display: flex;
     align-items: center;
@@ -161,7 +171,7 @@ textarea {
     border: solid black .5px;
     border-radius: 50px;
     margin: 0 10px 15px  0;
-    padding: 20px 0 5px 30px;
+    padding: 25px 0 5px 30px;
 }
 
 .send-btn {
@@ -260,8 +270,7 @@ textarea {
 }
 
 .signOutBtn:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);    
+    background-color: rgb(185, 8, 8);;
 }
 
 .send-btn:hover {
@@ -271,4 +280,83 @@ textarea {
 
 .messageInput:hover {
     background-color: #f3f1f1;
+}
+
+.formBtn:hover {
+    background-color: #1d87a5;
+}
+
+.switchBtn:hover {
+    background-color: #43b0cea8;
+}
+
+.registerForm .formBtn:hover {
+    background-color: #0e8f4e;
+}
+
+/* login and register forms  */
+.formPage {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(238, 248, 250);
+    /* background-color: #f6f1f1; */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.formBox {
+    height: 340px;
+    width: 400px;
+    padding: 30px 50px;
+    border-radius: 10px;
+    box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+}
+
+.registerForm {
+    height: 400px;
+}
+
+.formBox h2 {
+    font-size: 2em;
+    margin: 5px 0 20px;
+}
+
+.formBox input {
+    padding: 10px;
+    border-radius: 5px;
+    margin: 5px 0 15px;
+    border: rgba(99, 98, 98, 0.534) .5px solid;
+    color: rgba(99, 98, 98, 0.918);
+}
+
+.formPage button {
+    width: 350px;
+    height: 35px;
+    margin: 10px 0;
+    border: none;
+    
+}
+
+.formBtn {
+    background-color: #19A7CE;
+    color: white;
+    border-radius: 7px;
+}
+
+.switchBtn {
+    background-color: #60c7e457;
+    color: #116a83;
+    border-radius: 7px;
+}
+
+.registerForm .formBtn {
+    background-color: #13b966;
 }
