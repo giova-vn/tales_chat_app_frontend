@@ -1,11 +1,13 @@
-function ChatList({ selectChat, contacts, chatSelected }) {
+import Img from "../assets/user-icon-test.jpg"; 
+
+function ChatList({ selectChat, list, chatSelected }) {
     return (
         <section className="chatList">
             <h2>Chats</h2>
 
             <div className="contacts-list">
-                {contacts && contacts.length > 0 ? ( 
-                    contacts.map(contactInfo => {
+                {list && list.length > 0 ? ( 
+                    list.map(contactInfo => {
                         const isActive = chatSelected && chatSelected.id === contactInfo.id;
 
                         return (
@@ -15,11 +17,11 @@ function ChatList({ selectChat, contacts, chatSelected }) {
                                     selectChat(contactInfo);
                                 }}>
 
-                                <img src={contactInfo.prof} alt={`profile picture of ${contactInfo.user}`}/>
+                                <img src={Img} alt={`profile picture of ${contactInfo.other_username}`}/>
 
                                 <div className="contact-text">
-                                    <p className="contact-name">{contactInfo.user}</p>
-                                    <p>{contactInfo.mess}</p>
+                                    <p className="contact-name">{contactInfo.other_username}</p>
+                                    <p>{contactInfo.last_message}</p>
                                 </div>
                             </div>
                         );

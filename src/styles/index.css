@@ -51,7 +51,6 @@ ul {
 }
 
 textarea {
-    border: none;
     resize: none;
 }
 
@@ -161,8 +160,6 @@ textarea {
 
 /* message input  */
 .messageInput {
-    display: flex;
-    align-items: center;
     width: calc(90% - 150px);
     min-width: 200px;
     background-color: #fff;
@@ -171,7 +168,7 @@ textarea {
     border: solid black .5px;
     border-radius: 50px;
     margin: 0 10px 15px  0;
-    padding: 25px 0 5px 30px;
+    padding: 15px 30px;
 }
 
 .send-btn {
@@ -225,7 +222,7 @@ textarea {
     background-color: #d4d4d4;
 }
 
-.active-chat .contact-name {
+.contact-name {
     font-weight: bold;
 }
 
@@ -261,6 +258,11 @@ textarea {
 
 .contact-text {
     padding-top: 20px;
+}
+
+.active-chat > .contact-text {
+    width: 70%;
+    padding-top: 10px;
 }
 
     /* hover actions  */

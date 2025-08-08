@@ -1,6 +1,6 @@
 import Logo from "../assets/tales_icon.svg";
 
-function Header() {
+function Header({}) {
     return (
         <nav className="row header">
             <div className="row">
